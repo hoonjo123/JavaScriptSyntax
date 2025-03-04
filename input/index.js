@@ -8,3 +8,8 @@ const selectElement = document.getElementById('color');
 selectElement.addEventListener('change', () => {
   console.log(selectElement.value);
 });
+
+const resultElement = document.getElementById('result');
+selectElement.addEventListener('change', () => {
+  resultElement.textContent = selectElement.value;
+});
