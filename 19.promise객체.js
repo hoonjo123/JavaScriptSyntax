@@ -62,7 +62,7 @@ const workD4 = (value, callback) => {
 };
 
 
-workA1("10", (resA) => {
+workA1(10, (resA) => {
     console.log(`1. ${resA}`);
     workB2(resA, (resB) => {
         console.log(`2. ${resB}`);

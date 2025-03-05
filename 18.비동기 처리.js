@@ -3,17 +3,17 @@
 
 const workA = () => {
   //5초
-  console.log("workA done");
+  console.log('workA done');
 };
 
 const workB = () => {
   //3초
-  console.log("workB done");
+  console.log('workB done');
 };
 
 const workC = () => {
   //10초
-  console.log("workC done");
+  console.log('workC done');
 };
 
 workA();
@@ -33,21 +33,22 @@ workC();
 
 //콜백함수와 딜레이타임
 setTimeout(() => {
-  console.log("3초만 기다리셈");
+  console.log('3초만 기다리셈');
 }, 3000);
-console.log("종료"); //종료가 먼저 출력된걸 확인할 수 있다.
+console.log('종료'); //종료가 먼저 출력된걸 확인할 수 있다.
 // settimeout함수는 비동기함수이기 때문에 종료가 먼저 출력된다.
 
 //만약 종료가 정말 끝난 후 출력되기를 원한다면 콜백함수에 인수로 넘겨주어야함.
 const work = (callback) => {
+  console.log('3초만 기다리셈');
   setTimeout(() => {
-    console.log("3초만 기다리셈 좀!");
+    console.log('3초 지남');
     callback();
   }, 3000);
 };
 
 work(() => {
-  console.log("작업이 끝났어요");
+  console.log('작업이 끝났어요');
 });
 
 //그럼 젤 위에 있는 동기적으로 적어둔 workA, workB, workC를 비동기적으로 처리해보자
@@ -55,21 +56,21 @@ work(() => {
 
 const workA1 = () =>
   setTimeout(() => {
-    console.log("workA1 done");
+    console.log('workA1 done');
   }, 5000);
 
 const workB1 = () =>
   setTimeout(() => {
-    console.log("workB1 done");
+    console.log('workB1 done');
   }, 3000);
 
 const workC1 = () =>
   setTimeout(() => {
-    console.log("workC1 done");
+    console.log('workC1 done');
   }, 10000);
 
 const workD = () => {
-  console.log("workD done");
+  console.log('workD done');
 };
 
 workA1();

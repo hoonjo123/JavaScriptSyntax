@@ -55,7 +55,7 @@ const redToy = {
 };
 
 const {type, ...rest} = redToy;
-
+console.log(redToy);
 console.log(type); //bear
 console.log(rest); //{ price: 15000, color: 'red' }
 //rest변수는 객체의 형태로 출력이 되고 객체 안에는 레드토이 객체 프로퍼티 중

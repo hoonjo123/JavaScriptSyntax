@@ -17,6 +17,12 @@ let newArray1 = arr.map((elm) => {
 
 console.log(newArray1); //[ 10, 20, 30, 40, 50 ]
 
+let newArray2 = [1, 2, 3, 4, 5];
+let newArray3 = newArray2.map((elm1) => {
+    return elm1;
+})
+console.log(newArray3);
+
 //forEach와 마찬가지로 세가지의 매개변수를 전달할 수 있다.
 //currentValue, index, array 순서대로
 
